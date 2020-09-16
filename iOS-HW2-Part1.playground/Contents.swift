@@ -51,4 +51,39 @@ import UIKit
   #
  و اذا كان فوق ١٨ سوف يتم طباعة نص بأن المتقدم يُسمح له بإمتلاك رخصة قيادة
 */
+// Q1
+var height = 1.8
+var wieght = 85.0
+var BMI = (wieght/(height*height))
 
+func BMICalculate(){
+   print(wieght/(height*height))
+}
+if BMI <= 1.8 {
+    print("thin")
+}
+else if  1.8 <= BMI && BMI <= 30.0 {
+    print("normal")
+}
+else if  30.1 <= BMI && BMI <= 40.0 {
+    print("lit fat")
+}
+else {
+    print("too fat")
+}
+
+
+
+
+//Q2
+var name = "hussain"
+var age = 14
+
+func parameters(name: String , age: Int){
+    if age <= 18 {
+        print("\(name) لم يكمل العمر المطلوب")
+    }else {
+        print("\(name) يسمح له بامتلاك رخصة قيادة")
+    }
+}
+parameters(name: name, age: age)
