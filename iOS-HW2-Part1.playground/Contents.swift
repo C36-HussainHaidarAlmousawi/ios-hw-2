@@ -54,23 +54,24 @@ import UIKit
 // Q1
 var height = 1.8
 var wieght = 85.0
-var BMI = (wieght/(height*height))
+var BMI = wieght/(height*height)
 
-func BMICalculate(){
-   print(wieght/(height*height))
+func BMICalculate() {
+    print(wieght/(height*height))
+    if BMI <= 1.8 {
+       print("thin")
+   }
+   else if  1.8 <= BMI && BMI <= 30.0 {
+       print("normal")
+   }
+   else if  30.1 <= BMI && BMI <= 40.0 {
+       print("lit fat")
+   }
+   else {
+       print("too fat")
+   }
 }
-if BMI <= 1.8 {
-    print("thin")
-}
-else if  1.8 <= BMI && BMI <= 30.0 {
-    print("normal")
-}
-else if  30.1 <= BMI && BMI <= 40.0 {
-    print("lit fat")
-}
-else {
-    print("too fat")
-}
+BMICalculate()
 
 
 
