@@ -88,3 +88,10 @@ func parameters(name: String , age: Int){
     }
 }
 parameters(name: name, age: age)
+
+
+
+
+
+//bonus
+
